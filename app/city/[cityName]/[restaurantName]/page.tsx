@@ -6,7 +6,6 @@ import React from "react";
 export const generateStaticParams = async()=>{
   const fetchApi = await fetch(`${process.env.RESTAURANT_API}`)
   const response = await fetchApi.json()
-  console.log('restaurant respone', response)
   return response.map((restaurant: any)=>({
     restaurantName : restaurant.title
   }))
