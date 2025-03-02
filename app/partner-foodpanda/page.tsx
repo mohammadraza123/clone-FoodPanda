@@ -19,7 +19,7 @@ function PartnerFoodpanda() {
       </div>
       <div className="absolute mt-32 inset-0 flex flex-col justify-center items-start text-left text-white p-6 space-y-6 max-w-xl">
         <BaseText weight="bold" size="text-4xl" color="text-white">
-          Boost your revenue with foodpanda!
+          Boost your revenue with foodRush!
         </BaseText>
         <BaseText size="text-2xl" color="text-white">
           Sign up now and start earning more with the leading food delivery

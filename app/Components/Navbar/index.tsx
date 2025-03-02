@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import mainLogo from "../../../public/assets/main-logo.png";
+import mainLogo from "../../../public/assets/favicon-icon.jpg";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { AiOutlineHeart } from "react-icons/ai";
 import { RiGlobalLine } from "react-icons/ri";
@@ -45,7 +45,7 @@ const Navbar = () => {
           <HiOutlineUser className=" text-black" size={18} />
         </div>
         <Link href={"/"}>
-          <Image src={mainLogo} width={150} alt="main-logo" className="py-3" />
+          <Image src={mainLogo}  height={70} alt="main-logo" className="py-3 object-scale-down" />
         </Link>
         <div>
           <div className="flex items-center gap-3">
