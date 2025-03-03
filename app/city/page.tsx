@@ -4,12 +4,11 @@ import Image from "next/image";
 import AllCityImage from "../../public/assets/all-cities-image.jpg";
 import BaseText from "../Components/BaseText";
 import Link from "next/link";
-
+import { FetchAPI } from "../helper";
 
 async function City() {
-let data = []
-const response = await (await fetch("https://rest-api-foodpanda.vercel.app/city")).json()
-data = response
+
+  const data = await FetchAPI(process.env.CITY_API)
 
   return (
     <PageWrapper>

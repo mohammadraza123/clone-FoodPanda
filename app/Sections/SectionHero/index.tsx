@@ -29,13 +29,13 @@ const SectionHero = () => {
           let query = `${latitude},${longitude}`;
 
           let API_URL = `${EndPoint}?q=${query}&key=${API_key}`;
-          console.log(API_URL);
+          // console.log(API_URL);
 
           try {
             const response = await fetch(API_URL);
             const data = await response.json();
             if (data && data.results && data.results[0]) {
-              console.log("              address:", data.results[0].formatted.slice(1));
+              // console.log("              address:", data.results[0].formatted.slice(1));
 
               setUserLocation({
                 latitude,

@@ -1,17 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FetchAPI } from "@/app/helper";
 
 async function SectionCity() {
-  let data = [];
 
-  try {
-    const response = await (await fetch("https://rest-api-foodpanda.vercel.app/city")).json()
-    console.log("res", response);
-    data = response;
-  } catch (err) {
-    console.log("data fetching error in cities API: ", err);
-  }
+ const data = await FetchAPI(process.env.CITY_API)
 
   return (
     <section className="py-12 bg-gray-50">
